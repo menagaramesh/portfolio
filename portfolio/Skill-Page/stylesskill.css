@@ -1,0 +1,129 @@
+  /* Set the background color for the entire page */
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: url('cp.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #201e1e;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: brightness(1.2) contrast(1.1);
+}
+  /* Style the header */
+  header {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #faf3f3; /* Blue background color */
+    color: rgb(168, 7, 7);
+    box-shadow: 0 2px 4px rgba(161, 36, 36, 0.1);
+    border-radius: 30px;
+  }
+
+  /* Main heading style */
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Great Vibes', cursive; /* Custom font for main heading */
+  }
+  
+  /* Container for skill boxes */
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  
+  /* Individual skill box styling */
+  .skill-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  /* Skill box headings */
+  .skill-box h2 {
+    margin-top: 0;
+    color:  rgb(168, 7, 7);
+    font-style: bold;
+    font-family: "Times New Roman", Times, serif;/* Custom font for subheadings */
+    font-size: 30px;
+  }
+  
+  /* Paragraph text within skill boxes */
+  .skill-box p {
+    font-family:"Times New Roman"; /* Custom font for paragraphs */
+    font-size: 20px;
+  }
+  
+  /* Container for moving icons */
+  .moving-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  /* Styling for each icon */
+  .icon {
+    position: absolute;
+    opacity: 0.8;
+    animation: float 15s infinite linear;
+  }
+  
+  /* Animation for floating icons */
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-100vh) rotate(360deg);
+    }
+  }
+   
+  .home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #dd1313; /* Neon Pink */
+    border-radius: 8px;
+    background: transparent;
+    box-shadow: 0 0 10px #dd1313, 0 0 40px #f1673d, 0 0 80px #f00a0a;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background: #c45849;
+    color: black;
+    box-shadow: 0 0 20px #dd6844, 0 0 60px #b84040, 0 0 100px #ff00ff;
+}
+
+/* Neon Effect for Arrow */
+.arrow {
+    display: inline-block;
+    margin-right: 10px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 12px solid #ff0000; /* Neon Pink */
+    filter: drop-shadow(0 0 5px #f10909) drop-shadow(0 0 10px #e61212);
+}

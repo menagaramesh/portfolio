@@ -1,0 +1,122 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.home-btn {
+    position: absolute;
+    left: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ff00ff;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 40px #ff00ff;
+}
+
+/* Projects Section */
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-card {
+    width: 250px;
+    height: 150px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.project-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front Side */
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.card-front {
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Back Side */
+.card-back {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgb(240, 233, 233);
+    flex-direction: column;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 10px;
+}
+
+.card-back p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* GitHub Button */
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    color: white;
+    background: #ff00ff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #800080;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.7;
+}
